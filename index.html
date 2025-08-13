@@ -866,7 +866,7 @@
 
   <!-- Form container -->
   <div class="bg-white text-dark p-4 p-md-5 rounded-4 shadow position-relative z-2  contact1" >
-    <form>
+    <form action="thank-you.html">
       <h4 class="mb-5 text-center fw-bold ">✨ Get A Free Supplement 🎉</h4>
       <div class="row g-3">
         <div class="col-md-6">
@@ -876,11 +876,26 @@
           <input type="text" class="form-control rounded-pill px-4 py-2" placeholder="Last name" required />
         </div>
         <div class="col-md-6">
-          <input type="number" class="form-control rounded-pill px-4 py-2" placeholder="zip" required />
+<input 
+  type="number" 
+  class="form-control rounded-pill px-4 py-2" 
+  placeholder="ZIP" 
+  min="10000" 
+  max="99999" 
+  oninput="if(this.value.length > 5) this.value = this.value.slice(0,5);" 
+  required
+/>
         </div>
         <div class="col-md-6">
-          <input type="tel" class="form-control rounded-pill px-4 py-2" placeholder="Phone" required />
-        </div>
+<input 
+  type="tel" 
+  class="form-control rounded-pill px-4 py-2" 
+  placeholder="Phone" 
+  pattern="\d{10}" 
+  maxlength="10" 
+  oninput="this.value = this.value.replace(/\D/g, '').slice(0,10);" 
+  required
+/>        </div>
         <div class="col-md-12">
           <input type="email" class="form-control rounded-pill px-4 py-2" placeholder="E-mail" required />
         </div>
@@ -1365,9 +1380,9 @@
       <div class="col-md-4 mb-4">
         <h6>Support</h6>
         <ul>
-          <li><a href="#">Term & Condition</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="terms.html">Term & Condition</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="unsubscribe.html">Unsubscribe</a></li>
         </ul>
       </div>
     </div>
