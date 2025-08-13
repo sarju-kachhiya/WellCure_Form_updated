@@ -1,0 +1,1394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WellCure</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-image: url('assets/hero-bg.png');
+      color: white;
+      font-family: 'Poppins', sans-serif;
+    }
+
+
+.custom-navbar {
+  background-color: transparent;
+  padding: 20px 0;
+}
+
+.hero-section {
+  background-color: #0e2e1e;
+  padding: 80px 0;
+  background-image: url('assets/hero-bg.png'); /* optional */
+  background-size: cover;
+  background-position: center;
+}
+
+.welcome-text {
+  color: #8bc34a;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.hero-section ul li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.hero-section .btn {
+  padding: 10px 25px;
+  font-size: 16px;
+}
+
+.btn-buy-now {
+  background-color: #7ED957;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 25px;
+  display: inline-flex;
+  align-items: center;
+  transition: background 0.3s ease;
+  font-size: 16px;
+}
+
+.btn-buy-now i {
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+.btn-buy-now:hover {
+  background-color: #6cc84a;
+}
+
+/* Contact Now Button */
+.btn-contact-now {
+  border: 2px solid #7ED957;
+  background: transparent;
+  color: #7ED957;
+  font-weight: 600;
+  border-radius: 30px;
+  padding: 10px 25px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.btn-contact-now:hover {
+  background-color: #7ED957;
+  color: #fff;
+}
+.text-success1{
+    color: #5DB93D;
+}
+.hero-section {
+  position: relative;
+  background-color: #0e2e1e;
+  padding: 80px 0;
+  overflow: hidden;
+}
+.Hero-container{
+  margin: 30px 120px;
+}
+@media (max-width: 1439px) {
+  .Hero-container {
+    margin: 0 !important;
+  }
+}
+.why-choose-section1{
+  margin: 30px 140px;
+}
+@media (max-width: 1439px) {
+  .why-choose-section1 {
+    margin: 0 !important;
+  }
+}
+.commitment-section1{
+  margin: 20px 120px;
+}
+@media (max-width: 1439px) {
+  .commitment-section1 {
+    margin: 0 !important;
+  }
+}
+.promo-section1{
+  margin: 20px 120px;
+}
+@media (max-width: 1439px) {
+  .promo-section1 {
+    margin: 0 !important;
+  }
+}
+.cta-section1{
+  margin: 20px 120px;
+}
+@media (max-width: 1439px) {
+  .cta-section1 {
+    margin: 0 !important;
+  }
+}
+.faq-section1{
+  margin: 20px 120px;
+}
+@media (max-width: 1439px) {
+  .faq-section1 {
+    margin: 0 !important;
+  }
+}
+.contact-section1{
+  margin: 20px 120px;
+}
+@media (max-width: 1439px) {
+  .contact-section1 {
+    margin: 0 !important;
+  }
+}
+
+/* Capsules on Top-Right */
+.capsule-img {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  width: 100px;
+  z-index: 1;
+}
+
+/* Leaves on Bottom-Left */
+.leaves-img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 120px;
+  z-index: 1;
+}
+.info-marquee {
+  background-color: #7ED957;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 10px 0;
+  position: relative;
+  z-index: 10;
+}
+
+.marquee-content {
+  display: inline-block;
+  white-space: nowrap;
+  color: #fff;
+  font-weight: 700;
+  font-size: 30px;
+  animation: scrollText 15s linear infinite;
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.about-us-section {
+  background-color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.bottle-img {
+  max-width: 380px;
+  z-index: 3;
+  position: relative;
+}
+
+
+
+/* Reuse Buy Now button style */
+.btn-buy-now {
+  background-color: #7ED957;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 25px;
+  display: inline-flex;
+  align-items: center;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.btn-buy-now i {
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+.btn-buy-now:hover {
+  background-color: white;
+  color: #10311A;
+  transition: 0.5s ease, color 0.5s ease;
+  border: 2px solid #10311A;
+}
+
+/* Small badge box */
+.badge-box {
+  background-color: #f9f9f9;
+  box-shadow: 0 3px 6px rgba(0.4, 0.4, 0.4, 0.4);
+  border-radius: 12px;
+  padding: 10px 30px;
+}
+.separator-line {
+  height: 1px;
+  width: 400px; /* Adjust width as needed */
+  background-color: #737373; /* Matches the green theme */
+  border-radius: 5px;
+  margin-left: 0; /* or auto/center as per alignment */
+  opacity: 0.3; /* Optional: to make it less prominent */
+}
+.why-choose-section {
+    background-color: #f1f9ec;
+      padding: 60px 20px;
+    }
+    .why-choose-section h5 {
+      color: #5dbb4b;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+    .why-choose-section h2 {
+      font-weight: 700;
+    }
+    .highlight-green {
+      color: #5dbb4b;
+    }
+    .benefit-box {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .benefit-box img {
+      width: 150px;
+      margin-bottom: 5px;
+    }
+    .benefit-box h6 {
+      font-weight: 600;
+      color: #4aaf4f;
+    }
+    .benefit-box p {
+      font-size: 14px;
+      color: #555;
+    }
+    .product-center {
+      text-align: center;
+    }
+    .product-center img {
+      max-width: 250px;
+    }
+    .arrow {
+      position: absolute;
+      width: 40px;
+    }
+    /* Arrow position (adjust as needed based on your arrows) */
+    .arrow-1 { top: 30%; left: 50%; transform: translate(-50%, -50%) rotate(45deg); }
+    .arrow-2 { top: 70%; left: 50%; transform: translate(-50%, -50%) rotate(-45deg); }
+    .capsule-image, .leaves-image {
+      position: absolute;
+      z-index: 1;
+    }
+    .capsule-image {
+      top: 20px;
+      right: 20px;
+      width: 120px;
+    }
+    .leaves-image {
+      bottom: 0;
+      left: 0;
+      width: 140px;
+    }
+    .features-strip {
+      background-color: #ffffff;
+      padding: 40px 20px;
+    }
+
+    .feature-item {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      padding: 10px 20px;
+      /* background-color: #ffffff; */
+      border-radius: 50px;
+      /* box-shadow: 0 5px 25px rgba(0, 0, 0, 0.04); */
+      transition: all 0.3s ease;
+    }
+
+    .feature-icon {
+      background-color: #f6fcf5;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .feature-icon img {
+      width: 150px;
+      height: 150px;
+    }
+
+    .feature-text {
+      font-weight: 600;
+      font-size: 16px;
+      color: #113322;
+      line-height: 1.3;
+    }
+
+    @media (max-width: 768px) {
+      .feature-item {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+    .commitment-section {
+  background-image: url('assets/hero-bg.png');
+  color: #ffffff;
+  padding: 80px 20px;
+  position: relative; /* Required for absolute children */
+  overflow: hidden;
+}
+
+.capsule-image {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 120px;
+  z-index: 1;
+}
+
+.leaves-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 140px;
+  z-index: 1;
+}
+
+
+    .commitment-title {
+      font-size: 18px;
+      color: #a1ff9e;
+      letter-spacing: 1px;
+      font-weight: 500;
+    }
+
+    .commitment-heading {
+      font-size: 36px;
+      font-weight: 800;
+    }
+
+    .commitment-highlight {
+      color: #74e23f;
+    }
+
+    .point {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+
+    .point-number {
+      background-color: #74e23f;
+      color: #fff;
+      font-weight: 700;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      flex-shrink: 0;
+    }
+
+    .point-text h6 {
+      color: #a1ff9e;
+      font-weight: 600;
+      margin-bottom: 5px;
+      letter-spacing: 2px;
+    }
+
+    .point-text p {
+      color: #dddddd;
+      font-size: 15px;
+      margin: 0;
+    }
+
+    .product-image {
+      max-width: 100%;
+    }
+
+    @media (max-width: 768px) {
+      .commitment-heading {
+        font-size: 28px;
+      }
+    }
+    .capsule-image {
+      top: 20px;
+      right: 20px;
+      width: 120px;
+    }
+    .leaves-image {
+      bottom: 0;
+      left: 0;
+      width: 140px;
+    }
+    .promo-section {
+      background-color: #fff;
+      padding: 60px 0;
+      color: #212529;
+    }
+    .highlight-green {
+      color: #58b947;
+      font-weight: 700;
+    }
+    .pill-tag {
+      background-color: #58b947;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 12px;
+    }
+    .promo-image {
+      max-width: 100%;
+      height: auto;
+    }
+    .stat-number {
+      font-size: 2rem;
+      font-weight: 700;
+    }
+    .get-quote a {
+      color: #58b947;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .get-quote a:hover {
+      text-decoration: underline;
+    }
+
+    .best-seller-section {
+      background-color: #fff;
+      padding: 60px 0;
+    }
+
+    .highlight-green {
+      color: #58b947;
+      font-weight: 700;
+    }
+
+    .feature-icon {
+      color: #58b947;
+      font-size: 1rem;
+      /* margin-right: 10px; */
+    }
+
+    .price {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    .original-price {
+      text-decoration: line-through;
+      color: gray;
+      margin-left: 10px;
+      font-weight: 400;
+    }
+
+    .order-btn {
+      background-color: #58b947;
+      color: white;
+      border: none;
+      padding: 8px 20px;
+      border-radius: 20px;
+      font-weight: 600;
+    }
+    .order-btn:hover {
+      background-color: #fff;
+      color: #4cae3c;
+      border: 3px solid #58b947;
+      transition: background-color 0.3s ease;
+    }
+
+    .rating-box {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 12px;
+      position: absolute;
+      top: -10px;
+      left: -20px;
+      width: 110px;
+      text-align: center;
+    }
+
+    .rating-box .stars {
+      color: #58b947;
+      font-size: 14px;
+    }
+
+    .product-wrapper {
+      position: relative;
+      display: inline-block;
+    }
+
+    .product-img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .cta-section {
+      background-image: url('assets/hero-bg.png');
+      color: white;
+      padding: 60px 0;
+    }
+
+    .cta-highlight {
+      color: #8cd05f;
+      font-weight: 700;
+    }
+
+    .custom-purchase-btn {
+  background-color: #63c136;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  border-radius: 999px;
+  padding: 12px 22px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+}
+
+.custom-purchase-btn:hover {
+  background-color: #fff;
+  color: #63c136;
+  border: 3px solid #63c136;
+}
+
+.custom-purchase-btn .icon-circle {
+  background: white;
+  color: #63c136;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+.custom-purchase-btn .icon-circle:hover {
+  background-color: #fff;
+  color: #63c136;
+}
+
+.curved-arrow {
+  width: 60px;
+  height: auto;
+}
+
+
+    .product-img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .faq-section {
+  background-color: #fff;
+}
+
+.accordion-button {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  border-radius: 12px !important;
+  box-shadow: none;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #ffffff;
+  color: #222;
+  border-bottom: none;
+}
+
+.accordion-body {
+  background-color: #ffffff;
+  border-top: 1px solid #e0e0e0;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.view-all-btn {
+  background-color: #63c136;
+  color: white;
+  font-weight: 600;
+  border-radius: 30px;
+  padding: 10px 20px;
+  display: inline-flex;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.view-all-btn:hover {
+  background-color: #56b02f;
+  text-decoration: none;
+}
+
+.premium-benefits-section {
+  background-color: #f1f8ed;
+  overflow: hidden;
+}
+
+.icon-circle {
+  width: 50px;
+  height: 50px;
+  background-color: #63c136;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.decor-arrow {
+  position: absolute;
+  width: 100px;
+  z-index: 0;
+}
+
+.arrow-left {
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+
+.arrow-right {
+  top: 50%;
+  right: 30%;
+  transform: translate(50%, -50%);
+}
+
+.decor-capsule {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 140px;
+}
+
+.decor-leaf {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 140px;
+}
+
+.product-img {
+  max-width: 450px;
+  margin-top: 40px;
+}
+.bottom-image {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  max-height: 200px; /* Adjust as needed */
+  object-fit: contain;
+  z-index: 1;
+}
+
+.contact-section {
+  background-color: #fff;
+}
+
+.contact-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.custom-input {
+  background-color: #fff;
+  border-radius: 0.75rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.03);
+}
+
+.submit-btn {
+  background-color: #66c42d;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  padding: 0.7rem 1.5rem;
+  font-weight: 600;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #57ad27;
+  transform: translateY(-2px);
+}
+.form-submit a{
+  text-decoration: none;
+  color: #57ad27;
+}
+
+    .footer {
+      background-image: url('assets/hero-bg.png');
+      color: #ffffff;
+      padding: 60px 20px 30px;
+      position: relative;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .footer .logo-text {
+      font-size: 14px;
+      color: #cccccc;
+    }
+
+    .footer h6 {
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .footer ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer ul li {
+      margin-bottom: 10px;
+    }
+
+    .footer ul li a {
+      text-decoration: none;
+      color: #cccccc;
+      transition: 0.3s;
+    }
+
+    .footer ul li a:hover {
+      color: #74e23f;
+    }
+
+    .footer .bottom-line {
+      border-top: 1px solid #1f3a27;
+      margin-top: 40px;
+      padding-top: 20px;
+      text-align: center;
+      color: #aaaaaa;
+      font-size: 14px;
+    }
+
+    .footer .capsule-img,
+    .footer .leaf-img {
+      position: absolute;
+      width: 100px;
+      z-index: 1;
+    }
+
+    .footer .capsule-img {
+      top: 20px;
+      right: 20px;
+    }
+
+    .footer .leaf-img {
+      bottom: 10px;
+      left: 10px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="assets/Logo (1).png" alt="Logo" height="30"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item "><a class="nav-link active" href="./">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#why-choose-us">Why Choose Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <a href="#" class="btn btn-buy-now">
+  Buy Now <i class="bi bi-arrow-right-circle-fill"></i>
+</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section text-white d-flex align-items-center">
+    <div class="container ">
+      <div class="row Hero-container align-items-center">
+        <div class="col-md-6 ">
+          <p class="welcome-text">I WELCOME TO WELLCURE</p>
+          <h1 class="display-4 fw-bold">NATURAL  <span class="text-success1">SUPPLEMENT</span></h1>
+          <ul class="list-unstyled mt-4 mb-4">
+            <li><i class="bi bi-check-circle-fill text-success1"></i> Natural Supplements Crafted To Help You Thrive.</li>
+            <li><i class="bi bi-check-circle-fill text-success1"></i> Effective Supplements. No Fluff. Just Results.</li>
+          </ul>
+          <div>
+            <a href="#" class="btn btn-buy-now me-3">
+  Buy Now <i class="bi bi-arrow-right-circle-fill"></i>
+</a>
+<a href="#" class="btn btn-contact-now">
+  Contact Now
+</a>
+
+          </div>
+        </div>
+        <div class="col-md-6 position-relative">
+  <!-- Background image inside just this column -->
+  <!-- <div class="position-absolute top-0 start-50 translate-middle-x w-100 text-center" style="z-index: 0;">
+    <img src="assets/hero-product.png" alt="Supplement Bottles"  style="max-height: 190px; margin-top: -100px;" />
+  </div> -->
+
+  <!-- Form container -->
+  <div class="bg-white text-dark p-4 p-md-5 rounded-4 shadow position-relative z-2  contact1" >
+    <form>
+      <h4 class="mb-5 text-center fw-bold ">✨ Get A Free Supplement 🎉</h4>
+      <div class="row g-3">
+        <div class="col-md-6">
+          <input type="text" class="form-control rounded-pill px-4 py-2" placeholder="First name" required />
+        </div>
+        <div class="col-md-6">
+          <input type="text" class="form-control rounded-pill px-4 py-2" placeholder="Last name" required />
+        </div>
+        <div class="col-md-6">
+          <input type="number" class="form-control rounded-pill px-4 py-2" placeholder="zip" required />
+        </div>
+        <div class="col-md-6">
+          <input type="tel" class="form-control rounded-pill px-4 py-2" placeholder="Phone" required />
+        </div>
+        <div class="col-md-12">
+          <input type="email" class="form-control rounded-pill px-4 py-2" placeholder="E-mail" required />
+        </div>
+        <div class="col-12 text-end">
+          <button type="submit" class="btn submit-btn">
+            Submit Message <i class="ms-2 bi bi-arrow-right-circle"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+    <p class="text-center mt-4 form-submit">
+      *By submitting this form, you acknowledge and accept to our <a href="terms.html">Terms & Conditions</a> and <a href="privacy.html">Privacy Policy</a>. Believes that the data you submitted is accurate and true.
+    </p>
+  </div>
+</div>
+      </div>
+    </div>
+
+    <img src="assets/capsules.png" class="capsule-img" alt="Capsules" />
+  <img src="assets/leaves.png" class="leaves-img" alt="Leaves" />
+  </section>
+  <div class="info-marquee">
+  <div class="marquee-content text-dark">
+    ✽ FREE DELIVERY ✽ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ✽ 100% SECURE PAYMENT ✽&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ✽ 30 DAYS FREE RETURNS ✽&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ✽ DEDICATED 24/7 SUPPORTS ✽&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ✽ PREMIUM QUALITY PRODUCTS ✽
+  </div>
+</div>
+<section class="about-us-section py-5" id="about">
+  <div class="container">
+    <div class="row align-items-center mt-5 mb-4">
+
+      <!-- Image & Leaves Side -->
+      <div class="col-lg-6 position-relative text-center">
+        <img src="assets/sec2.png" alt="Supplement" class="img-fluid bottle-img">
+      </div>
+
+      <!-- Text Content Side -->
+      <div class="col-lg-6 mt-4 mt-lg-0">
+        <p class="text-success1 fw-semibold small mb-2">| About Us</p>
+        <h2 class="fw-bold mb-3 text-dark">COMMITTED TO YOUR<br><span class="text-success1">HEALTH AND WELLNESS!</span></h2>
+        <p class="text-muted mb-4">We are dedicated to preserving the planet’s natural beauty while practices ensure a thriving future for generations to come.</p>
+
+        
+        
+        
+
+        <div class="d-flex align-items-center gap-3 flex-nowrap flex-row">
+            <ul class="list-unstyled mb-4 mt-4">
+          <li class="mb-2 text-dark"><i class="bi bi-check-circle-fill text-success1 me-2"></i> Pure & Natural Ingredients</li>
+          <li class="text-dark"><i class="bi bi-check-circle-fill text-success1 me-2"></i> Premium Quality Products</li>
+        </ul>
+            
+            <div class="badge-box d-flex align-items-center gap-3 px-3 py-2 rounded shadow-sm">
+            <!-- <i class="bi bi-bag-check-fill text-success fs-4"></i> -->
+            <img src="assets/design_elements/sec2_icon1.png" alt="">
+            <div>
+              <span class="fw-bold small text-dark">100% Natural &<br>Pure Ingredients</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="separator-line my-3"></div>
+        <a href="#" class="btn btn-buy-now mt-5 mt-sm-3">
+            Buy Now <i class="bi bi-arrow-right-circle-fill"></i>
+          </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+<div class="why-choose-section position-relative" id="why-choose-us">
+
+  <!-- Decorative PNGs -->
+  <img src="assets/capsules.png" class="capsule-image" alt="Capsule">
+  <img src="assets/leaves.png" class="leaves-image" alt="Leaves">
+
+  <div class="container">
+    <div class="row why-choose-section1 justify-content-center text-start mb-4">
+      <div class="col-lg-6">
+        <h5>| Why Choose Us</h5>
+        <h2 class="text-dark">Why We're Your Best <br><span class="highlight-green">Health Choice!</span></h2>
+      </div>
+      <div class="col-lg-6">
+        <p class="mt-2 text-muted">We prioritize quality, using only natural, science-based ingredients to create effective supplements that support your health, energy, and overall well-being.</p>
+      </div>
+    </div>
+
+    <div class="row align-items-center">
+      <!-- Left Column -->
+      <div class="col-md-4">
+        <div class="benefit-box">
+          <img src="assets/design_elements/natural-ingredients.png" alt="Natural Ingredients">
+          <h6>Natural Ingredients</h6>
+          <p>Our supplements are made with natural ingredients, carefully for quality, effectiveness.</p>
+        </div>
+        <div class="benefit-box">
+          <img src="assets/design_elements/pure-elements.png" alt="Pure Elements">
+          <h6>Pure Elements</h6>
+          <p>Our supplements are made with natural ingredients, carefully for quality, effectiveness.</p>
+        </div>
+      </div>
+
+      <!-- Center Product -->
+      <div class="col-md-4 product-center position-relative">
+        <img src="assets/product-center-sec3.png" alt="Product">
+      </div>
+
+      <!-- Right Column -->
+      <div class="col-md-4">
+        <div class="benefit-box">
+          <img src="assets/design_elements/high-potency.png" alt="High Potency">
+          <h6>High Potency</h6>
+          <p>Our supplements are made with natural ingredients, carefully for quality, effectiveness.</p>
+        </div>
+        <div class="benefit-box">
+          <img src="assets/design_elements/nature-best.png" alt="Nature’s Best">
+          <h6>Nature's Best</h6>
+          <p>Our supplements are made with natural ingredients, carefully for quality, effectiveness.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<section class="features-strip">
+  <div class="container">
+    <div class="row gy-4 justify-content-center">
+      
+      <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+        <div class="feature-item">
+          <div class="feature-icon">
+            <img src="assets/design_elements/sec4-icon1.png" alt="Natural">
+          </div>
+          <div class="feature-text">100% Natural &<br>Pure Ingredients</div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+        <div class="feature-item">
+          <div class="feature-icon">
+            <img src="assets/design_elements/sec4-icon2.png" alt="Absorption">
+          </div>
+          <div class="feature-text">Optimized for Fast<br>Absorption</div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+        <div class="feature-item">
+          <div class="feature-icon">
+            <img src="assets/design_elements/sec4-icon3.png" alt="Additive Free">
+          </div>
+          <div class="feature-text">No Artificial<br>Additives or Fillers</div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+        <div class="feature-item">
+          <div class="feature-icon">
+            <img src="assets/design_elements/sec4-icon4.png" alt="Gut Health">
+          </div>
+          <div class="feature-text">Gut Health &<br>Digestion Support</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section class="commitment-section ">
+  <div class="container">
+    
+    <div class="row align-items-center commitment-section1">
+        
+
+      <!-- Left Column -->
+      <div class="col-md-6">
+        <div class="commitment-title mb-2">| OUR KEY POINTS</div>
+        <div class="commitment-heading mb-4">
+          OUR COMMITMENT TO <br>
+          <span class="commitment-highlight">QUALITY & SERVICE</span>
+        </div>
+
+        <!-- Key Point 1 -->
+        <div class="point">
+          <div class="point-number">01</div>
+          <div class="point-text">
+            <h6>Uncompromising Quality</h6>
+            <p>Our supplements are made with natural ingredients, carefully for quality, effectiveness.</p>
+          </div>
+        </div>
+
+        <!-- Key Point 2 -->
+        <div class="point">
+          <div class="point-number">02</div>
+          <div class="point-text">
+            <h6>Customer-First Approach</h6>
+            <p>Our supplements are made with natural ingredients, carefully for quality, effectiveness.</p>
+          </div>
+        </div>
+
+        <!-- Key Point 3 -->
+        <div class="point">
+          <div class="point-number">03</div>
+          <div class="point-text">
+            <h6>Easy Returns & Refunds</h6>
+            <p>Our supplements are made with natural ingredients, carefully for quality, effectiveness.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Image -->
+      <div class="col-md-6 text-center">
+        <img src="assets/sec6.png" alt="Premium Supplement" class="product-image">
+      </div>
+
+    </div>
+  </div>
+  <img src="assets/capsules.png" class="capsule-image" alt="Capsule">
+  <img src="assets/leaves.png" class="leaves-image" alt="Leaves">
+</section>
+
+<section class="promo-section">
+  <div class="container">
+    <div class="row align-items-center promo-section1">
+      
+      <!-- Left Text Content -->
+      <div class="col-md-4 mb-4">
+        <p class="text-uppercase text-success1 small"><b>| &nbsp;&nbsp; W h a t &nbsp;&nbsp; W e &nbsp;&nbsp;D o</b></p>
+        <h2 class="fw-bold text-uppercase text-dark">
+          Supporting or <br />
+          Your Natural <br />
+          <span class="highlight-green">Solutions for <br> Better Health!</span>
+        </h2>
+        <p class="mt-3">
+          We are dedicated to offering high-quality, natural supplements designed to support your overall health, boost vitality.
+        </p>
+      </div>
+
+      <!-- Center Image -->
+      <div class="col-md-4 text-center">
+        <img src="assets/sec7.png" width="80%" alt="Premium Supplement" class="promo-image" />
+      </div>
+
+      <!-- Right Stats Content -->
+      <div class="col-md-4">
+        <p>Our science-backed formulas use ingredients to provide effective, safe.</p>
+        <div class="mt-4">
+          <p class="stat-number">95%</p>
+          <p>100% Natural & Pure Ingredients</p>
+        </div>
+        <div class="mt-4">
+          <p class="stat-number">22/7</p>
+          <p>Dedicated 24/7 Supports</p>
+        </div>
+      </div>
+    </div>
+    <p class="mt-4 get-quote text-center">
+          <span class="pill-tag me-2">Free</span> Let's make something great work together. 
+          <a href="#">Get Free Quote</a>
+        </p>
+  </div>
+</section>
+<section class="best-seller-section">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- Product Image and Rating -->
+      <div class="col-md-6 text-center mb-4 mb-md-0">
+        <div class="product-wrapper">
+          <img src="assets/sec8.png" width="90%" alt="Premium Supplement" class="product-img" />
+          <!-- <div class="rating-box">
+            <h5 class="mb-1">4K+</h5>
+            <div class="stars mb-1">★★★★★</div>
+            <small>500+ Review Our<br>Happy Client</small>
+          </div> -->
+        </div>
+      </div>
+
+      <!-- Text Content -->
+      <div class="col-md-6">
+        <p class="mb-4 text-success1"><b>|&nbsp;&nbsp;B e s t &nbsp;&nbsp;S e l l e r</b></p>
+        <h2 class="fw-bold text-dark text-uppercase">
+          Boost Your Health For <br />
+          <span class="highlight-green">Best Sellers</span>
+        </h2>
+        <p class="mt-4 mb-4 text-dark">
+          Discover our most popular health supplements, trusted by thousands for their quality, effectiveness, and natural ingredients. Each product is carefully formulated to support your overall well-being.
+        </p>
+
+        <!-- Features -->
+        <ul class="list-unstyled mb-4 mt-4">
+          <li class="mb-2 text-dark"><i class="bi bi-check-circle-fill text-success1 me-2"></i> Top-Rated Supplements For Daily Wellness And Vitality</li>
+          <li class="text-dark"><i class="bi bi-check-circle-fill text-success1 me-2"></i> Customer Favorites For Enhanced Energy And Immunity</li>
+        </ul>
+
+        <!-- Pricing -->
+        <div class="d-flex align-items-center mt-4">
+          <button class="order-btn me-5">Order Now</button>
+          <div class="price  text-dark">$36.00 <span class="original-price">$45.00</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <div class="row align-items-center cta-section1">
+      
+      <!-- Text Content -->
+      <div class="col-md-6 mb-4 mb-md-0">
+        <h2 class="fw-bold text-white">
+          START YOUR JOURNEY TO <br>
+          <span class="cta-highlight">BETTER HEALTH!</span>
+        </h2>
+        <p class="mt-3">
+          Take control of your health with our premium supplements, designed to boost energy, strengthen immunity.
+        </p>
+        <div class="d-flex align-items-center gap-3 mt-4">
+  <button class="custom-purchase-btn">
+    <span>Purchase Now</span>
+    <div class="icon-circle">
+      <i class="bi bi-arrow-right-short"></i>
+    </div>
+  </button>
+  <img src="assets/design_elements/cta-box-arrow.svg fill.png" width="120%" alt="Curved Arrow" class="curved-arrow" />
+</div>
+      </div>
+
+      <!-- Product Image -->
+      <div class="col-md-6 text-center">
+        <img src="assets/sec6.png" width="50%" alt="Supplement Product" class="product-img" />
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="faq-section py-5">
+  <div class="container">
+    <div class="row align-items-center faq-section1">
+      
+      <!-- Left: FAQ Accordion -->
+      <div class="col-lg-6 mb-5 mb-lg-0">
+        <p class="text-success1 fw-bold"><b>| &nbsp;&nbsp;F A Q ' S</b></p>
+        <h2 class="fw-bold text-dark mt-2">
+          HEALTH SUPPLEMENT <br>
+          <span class="text-success1">QUESTIONS ANSWERED!</span>
+        </h2>
+
+        <div class="accordion mt-4" id="faqAccordion">
+          <!-- Accordion Item 1 -->
+          <div class="accordion-item mb-3 rounded-3 shadow-sm border-0">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed faq-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                What makes your supplements different?
+              </button>
+            </h2>
+            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Our supplements are formulated with science-backed, premium-grade ingredients for optimal effectiveness.
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion Item 2 -->
+          <div class="accordion-item mb-3 rounded-3 shadow-sm border-0">
+            <h2 class="accordion-header">
+              <button class="accordion-button faq-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                Are your supplements safe to use?
+              </button>
+            </h2>
+            <div id="faq2" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Yes! All our products are third-party lab tested and manufactured in certified facilities to ensure safety and effectiveness.
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion Item 3 -->
+          <div class="accordion-item mb-3 rounded-3 shadow-sm border-0">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed faq-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                How long does it take to see results?
+              </button>
+            </h2>
+            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Results may vary, but many customers report noticeable improvements within 2–4 weeks of consistent use.
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion Item 4 -->
+          <div class="accordion-item mb-3 rounded-3 shadow-sm border-0">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed faq-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                What is your return policy?
+              </button>
+            </h2>
+            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                We offer a 30-day money-back guarantee if you're not fully satisfied with your purchase.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Product Image & Button -->
+      <div class="col-lg-6 text-center">
+        <!-- <a href="#all-faqs" class="btn view-all-btn mb-4">
+          View All FAQ’s <i class="bi bi-arrow-right-circle-fill ms-2"></i>
+        </a> -->
+        <img src="assets/faq-img.png" width="70%" alt="Supplement Product" class="img-fluid mt-5" />
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="premium-benefits-section position-relative py-5">
+  <div class="container text-center position-relative z-1">
+    <small class="text-success1 fw-semibold"><b>| &nbsp;&nbsp;P R E M I U M&nbsp;&nbsp; P R O D U C T ' S</b></small>
+    <h2 class="fw-bold text-dark mt-2">
+      PREMIUM INGREDIENTS, MAXIMUM <br />
+      <span class="text-success1">BENEFITS FOR YOUR HEALTH!</span>
+    </h2>
+
+    <!-- Features row -->
+    <div class="row justify-content-center align-items-center my-5 gx-5">
+      <div class="col-md-4 d-flex align-items-center justify-content-center gap-3 mb-4 mb-md-0">
+        <div class="icon-circle">
+          <i class="bi bi-droplet-half text-white fs-4"></i>
+        </div>
+        <p class="fw-medium text-start text-dark mb-0">100% Natural & Pure <br>Ingredients</p>
+      </div>
+
+      <div class="col-md-4 d-flex align-items-center justify-content-center gap-3">
+        <div class="icon-circle">
+          <i class="bi bi-heart-pulse-fill text-white fs-4"></i>
+        </div>
+        <p class="fw-medium text-start text-dark mb-0">Gut Health & Digestion <br>Support</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Decorative arrows -->
+  <img src="assets/design_elements/arrow-left.png" class="decor-arrow arrow-left" alt="Arrow" />
+  <img src="assets/design_elements/arrow-right.png" class="decor-arrow arrow-right" alt="Arrow" />
+
+  <!-- Decorative capsules and leaves -->
+  <img src="assets/capsules.png" class="decor-capsule" alt="Capsule" />
+  <img src="assets/leaves.png" class="decor-leaf" alt="Leaf" />
+
+  <!-- Product image -->
+  <div class="text-center position-relative z-1">
+    <img src="assets/sec9.png" alt="Product" class="img-fluid product-img" />
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="row text-center text-md-start align-items-start">
+      
+      <!-- Logo and Text -->
+      <div class="col-md-4 mb-4">
+        <img src="assets/Logo (1).png" alt="Logo" width="50%" >
+        <p class="logo-text mt-4">We are committed to helping you <br> achieve optimal health wellness.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-4 mb-4">
+        <h6>Quick Link</h6>
+        <ul>
+          <li><a href="./">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#why-choose-us">Why Choose Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Support -->
+      <div class="col-md-4 mb-4">
+        <h6>Support</h6>
+        <ul>
+          <li><a href="#">Term & Condition</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom Line -->
+    <div class="bottom-line">
+      Copyright © <a href="./" style="text-decoration: none; color: #74e23f;">Wellcure</a> 2025 All Rights Reserved.
+    </div>
+  </div>
+
+  <!-- Decorative Images -->
+  <img src="assets/leaves.png" alt="Leaf" class="leaf-img">
+  <img src="assets/capsules.png" alt="Capsules" class="capsule-img">
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+  document.querySelector("form").addEventListener("submit", function (e) {
+    e.preventDefault();
+    alert("Message submitted successfully!");
+  });
+</script>
+</body>
+</html>

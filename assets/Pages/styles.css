@@ -1,0 +1,138 @@
+
+/* ===== Wellcure Mini Design System ===== */
+:root {
+  --bg: #ffffff;
+  --surface: #123F28;
+  --primary: #61D164;
+  --primary-700: #3FB14D;
+  --primary-900: #2A8B3A;
+  --accent: #B6F7B7;
+  --muted: #105115;
+  --text: #EAF6EC;
+}
+
+html, body {
+  height: 100%;
+  background: var(--bg);
+  color: var(--text);
+  scroll-behavior: smooth;
+}
+
+a { color: var(--primary); }
+a:hover { color: var(--accent); }
+
+.navbar {
+  background: linear-gradient(180deg, var(--surface), rgba(18,63,40,.9));
+  backdrop-filter: blur(6px);
+}
+.navbar-brand, .nav-link { color: var(--text) !important; }
+.navbar-brand span { color: var(--primary); }
+
+.btn-success {
+  background-color: var(--primary);
+  border-color: var(--primary-700);
+  color: #0b2a16;
+  font-weight: 700;
+}
+.btn-success:hover {
+  background-color: var(--primary-700);
+  border-color: var(--primary-900);
+  color: #0b2a16;
+}
+
+.hero {
+  background: radial-gradient(80% 80% at 10% 10%, rgba(97,209,100,.15) 0%, transparent 60%),
+              radial-gradient(70% 70% at 90% 10%, rgba(97,209,100,.1) 0%, transparent 70%),
+              var(--bg);
+  padding: 5rem 0 3rem;
+
+}
+
+.badge-check {
+  background: rgba(97,209,100,.15);
+  border: 1px solid rgba(97,209,100,.35);
+  color: var(--accent);
+}
+
+.card {
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid rgba(97,209,100,.12);
+  border-radius: 1rem;
+}
+
+.footer {
+  color: var(--muted);
+}
+
+.kicker {
+  letter-spacing: .25em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--muted);
+  font-size: .8rem;
+}
+
+.display-4, .display-5 {
+  color: var(--text);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+hr.soft {
+  border: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,.2), transparent);
+}
+
+main.min-h-60 {
+  min-height: 60vh;
+}
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  color: var(--primary-900);
+}
+.lead1{
+  color: var(--primary-700);
+  font-size: large;
+}
+.buy-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: #7ddf64; /* green shade */
+    color: white;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 999px; /* pill shape */
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+
+  .buy-btn .arrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: #7ddf64;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: 12px;
+    font-size: 1rem;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+
+  .buy-btn:hover {
+    background-color: #fff;
+    border: 1px solid #0b2a16;
+    color: #0b2a16;
+  }
+
+  .buy-btn:hover .arrow {
+    transform: translateX(3px); /* arrow slides right */
+    background-color: #0b2a16;
+    color: white;
+  }

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Buy Now Button</title>
+<style>
+  .buy-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: #7ddf64; /* green shade */
+    color: white;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 999px; /* pill shape */
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+
+  .buy-btn .arrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: #7ddf64;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: 12px;
+    font-size: 1rem;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+
+  .buy-btn:hover {
+    background-color: #69c352; /* darker green on hover */
+  }
+
+  .buy-btn:hover .arrow {
+    transform: translateX(3px); /* arrow slides right */
+    background-color: #ffffff;
+  }
+</style>
+</head>
+<body>
+
+<a href="#" class="buy-btn">
+  Buy Now
+  <span class="arrow">→</span>
+</a>
+
+</body>
+</html>
